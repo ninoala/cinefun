@@ -1,0 +1,54 @@
+.site-main {
+    background-color: #121010;
+}
+
+.about-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        margin: 2rem 0;
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+    }
+
+    &__img {
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__info {
+        padding: 3rem 5rem;
+        max-width: 85rem;
+        max-height: 150rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border: solid .1rem rgba(233, 232, 239, 0.197);
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.282);
+        box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.282);
+
+        @include respond(tab-port) {
+            margin: 3rem 2rem;
+        }
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+        }
+    }
+}

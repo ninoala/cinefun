@@ -1,0 +1,37 @@
+.hero {
+  height: 70vh;
+  overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    height: 70vh;
+
+    &__img {
+        opacity: 80%;
+        object-fit: cover;
+        height: 70vh;
+        object-position: center center;
+    }
+
+    &__movie-heading {
+        z-index: 999;
+        position: absolute;
+        float: right;
+        right: 8%;
+        top: 80%;
+        color: #f4f4f4;
+        font-size: 6rem;
+        font-weight: 600;
+        color: inherit;
+
+        @include respond(tab-land) {
+            font-size: 4.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+    }
+}

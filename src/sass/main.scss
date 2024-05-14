@@ -1,0 +1,23 @@
+//abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+//base
+@import 'base/base';
+@import 'base/normalize';
+@import 'base/third-party';
+@import 'base/utilities';
+
+//components
+@import 'components/footer';
+@import 'components/header';
+@import 'components/movie-carousel';
+@import 'components/movie-details';
+@import 'components/movie-item';
+@import 'components/pagination';  
+
+
+//pages
+@import 'pages/about';
+@import 'pages/favourites';
+@import 'pages/home';

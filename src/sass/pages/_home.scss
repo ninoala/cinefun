@@ -1,0 +1,122 @@
+.site-main {
+    background-color: #121010;
+    min-height: 100vh;
+}
+
+.section-browse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 4rem;
+    color: $color-white;
+
+    @media only screen and (max-width: 50em) {
+            flex-wrap: wrap;
+        }
+
+    &__form {
+        position: relative;
+
+        @media only screen and (max-width: 50em) {
+            width: 100%;
+            margin-top: 2rem;
+            order: 1;
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+
+        @media only screen and (max-width: 50em) {
+            flex: 1;
+        }
+    }
+
+    &__input {
+        width: 50rem;
+        height: 4rem;  
+        border-radius: 3px;
+        font-size: 1.5rem;
+        border: 0.1rem solid $color-grey;
+        color: $color-white;
+        background: transparent;
+        padding-left: 1.5rem;
+
+        @include respond(tab-land) {
+            width: 40rem;
+        }
+
+        @include respond(tab-port) {
+            width: 25rem;
+        }
+
+        @media only screen and (max-width: 50em) {
+            width: 100%;
+        }
+    }
+
+    &__search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: .3rem;
+        margin-right: 1.2rem;
+        font-size: 2rem;
+        fill: $color-pink;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $color-pink;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        @media only screen and (max-width: 50em) {
+            flex: 1;
+            justify-content: flex-end;
+        }
+    }
+
+    &__label {
+        font-size: 2rem;
+    }
+
+    &__select {
+        width: 20rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #000;
+        background-color: $color-white;
+        border: 1px solid $color-grey;
+        padding: 1rem 0.5rem;
+        border-radius: 4px;
+
+        @media only screen and (max-width: 50em) {
+            width: 10rem;
+        }
+    }
+}
+
+.section-grid {
+    padding: 1rem 2rem;
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0 auto;
+    }
+}
+
+.sorry-text {
+    color: $color-white;
+}
