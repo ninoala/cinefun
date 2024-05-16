@@ -12,4 +12,9 @@
         flex-wrap: wrap;
         padding: 1rem;
     }
+
+    &__paragraph {
+        color: $color-white;
+        font-size: 2rem;
+    }
 }

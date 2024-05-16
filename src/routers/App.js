@@ -8,7 +8,7 @@ import 'bootstrap';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="cinefun">
       <Header />
       <Routes>
         <Route path="/" exact element={<PageHome />} />

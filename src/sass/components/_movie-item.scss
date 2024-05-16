@@ -7,11 +7,20 @@
   padding: 0;
   justify-self: center;
 
+  @include respond(phone) {
+    width: 40rem;
+    height: 70rem;
+  }
+
   &__poster {
     display: flex;
     flex-direction: column;
     width: 27rem;
     height: 37rem;
+
+    @include respond(phone) {
+      width: 40rem;
+   }
   }
   
   &__icon--unclicked,
@@ -44,17 +53,29 @@
     text-decoration: none;
     color: #0d6efd;
     font-size: 1.8rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+   }
   }
 
   &__released {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-bottom: 0;
+
+    @include respond(phone) {
+      font-size: 2rem;
+   }
   }
 
   &__star {
     color: #ffd700;
     font-size: 1.5em;
+
+    @include respond(phone) {
+     font-size: 1.7em;
+    }
   }
 
   &__hover {
@@ -89,6 +110,7 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     font-size: 1.4rem;
+    overflow: hidden;
   }
   
 }

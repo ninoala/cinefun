@@ -13,13 +13,13 @@ const PageFavourites = ({ favs, toggleFavorites }) => {
               key={movie.id}
               movie={movie}
               toggleFavorites={toggleFavorites}
-              isFavorite={true} // Since these are favorites, all are marked as favorites
+              isFavorite={true} //since these are favorites, all are marked as favorites
             />
           ))}
           {favs.length === 0 && (
-            <div className="sorry-text">
-              <p>
-                Sorry you have no favorite movies. Please return to the home
+            <div className="favourites__text-container">
+              <p className="favourites__paragraph">
+                Sorry, you don't have any favourite movies selected. Please return to the home
                 page to add a favorite movie!
               </p>
             </div>
@@ -29,4 +29,4 @@ const PageFavourites = ({ favs, toggleFavorites }) => {
   )
 }
 
-export default PageFavourites
+export default PageFavourites;

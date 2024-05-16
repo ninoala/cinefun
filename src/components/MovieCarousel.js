@@ -18,11 +18,11 @@ const MovieCarousel = ({ movies }) => {
                 <Link className="carousel__link" to={`/movie/${movie.id}`}>{movie.title} </Link>
               </h2>
 
-                <img
-                  className="carousel__img d-block w-100"
-                  src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-                  alt={`A ${movie.title} movie poster`}
-                />
+              <img
+                className="carousel__img d-block w-100"
+                src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+                alt={`A ${movie.title} movie poster`}
+              />
             </Carousel.Item>
           );
         })}
@@ -31,4 +31,4 @@ const MovieCarousel = ({ movies }) => {
   )
 }
 
-export default MovieCarousel
+export default MovieCarousel;

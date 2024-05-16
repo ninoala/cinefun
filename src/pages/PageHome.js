@@ -84,7 +84,6 @@ const PageHome = ({ isFavoriteContent }) => {
 
   if (!movies) return;
 
-
   return (
     <main className="site-main" id="main">
       <section className="section-movie-carousel">
@@ -149,4 +148,4 @@ const PageHome = ({ isFavoriteContent }) => {
   );
 }
 
-export default PageHome
+export default PageHome;

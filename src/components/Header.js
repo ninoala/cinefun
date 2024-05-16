@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.png';
 
 const Header = () => {
     //useLocation hook for pathname in the bootsrap navbar
@@ -8,9 +8,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Navbar bg="black" variant="dark" expand="md">
+      <Navbar bg="black" variant="dark" expand="lg">
         <Container className="header__nav">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/cinefun">
               <img className="header__logo" src={Logo} alt="Website logo" />
           </Navbar.Brand>
 
@@ -18,9 +18,9 @@ const Header = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/" active={pathname === "/"} className='header__link'>HOME</Nav.Link>
-              <Nav.Link href="/about" active={pathname === "/about"} className='header__link'>ABOUT</Nav.Link>
-              <Nav.Link href="/favorites" active={pathname === "/favorites"} className='header__link'>FAVOURITES</Nav.Link>
+              <Nav.Link href="/cinefun" active={pathname === "/cinefun"} className='header__link'>HOME</Nav.Link>
+              <Nav.Link href="/cinefun/about" active={pathname === "/cinefun/about"} className='header__link'>ABOUT</Nav.Link>
+              <Nav.Link href="/cinefun/favorites" active={pathname === "/cinefun/favorites"} className='header__link'>FAVOURITES</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -29,4 +29,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;

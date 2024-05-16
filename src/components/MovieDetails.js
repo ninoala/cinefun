@@ -55,8 +55,6 @@ const MovieDetails = () => {
     return hours + 'h ' + minutes + 'm';
   };
 
-
-
   return (
     <>
       <div className="movie-details">
@@ -116,7 +114,7 @@ const MovieDetails = () => {
         )}
 
       <a className="btn btn-outline-danger">
-        <Nav.Link href="/" active={pathname === "/"}>
+        <Nav.Link href="/cinefun" active={pathname === "/cinefun"}>
           Back to Home
         </Nav.Link>
       </a>

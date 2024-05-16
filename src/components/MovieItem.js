@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons';
 import StarRating from './StarRating';
-import posterPlaceholder from '../assets/no-poster.png'
+import posterPlaceholder from '../assets/no-poster.png';
 
 const MovieItem = ({ movie, isFavorite, toggleFavorites }) => {
   //tertiary operator for a movie poster/placeholder
@@ -41,11 +42,11 @@ const MovieItem = ({ movie, isFavorite, toggleFavorites }) => {
 
         <div className="movie-item__hover">
           <p className="movie-item__paragraph">{movie.overview}</p>
-          <a href={`/movie/${movie.id}`}>
+          <Link to={`/movie/${movie.id}`}>
             <button type="button" className="btn btn-outline-danger">
               More info
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </figure>
